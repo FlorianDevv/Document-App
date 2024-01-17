@@ -40,9 +40,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="Piz-ok-6cc" kind="show" identifier="ShowDocumentSegue" id="NJo-NV-blJ"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
