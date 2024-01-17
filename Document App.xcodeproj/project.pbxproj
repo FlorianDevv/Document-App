@@ -18,6 +18,7 @@
 		3EA84ACA2B57C79A00F46E94 /* pawel-czerwinski-0043ZaxWdPY-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EA84AC92B57C79A00F46E94 /* pawel-czerwinski-0043ZaxWdPY-unsplash.jpg */; };
 		3EA84ACC2B57C79F00F46E94 /* neom-gBCMAENwknA-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EA84ACB2B57C79F00F46E94 /* neom-gBCMAENwknA-unsplash.jpg */; };
 		3EA84ACE2B57C7A300F46E94 /* neom-4K_x--J2Jbc-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EA84ACD2B57C7A200F46E94 /* neom-4K_x--J2Jbc-unsplash.jpg */; };
+		3EA84AD22B57E2D100F46E94 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA84AD12B57E2D100F46E94 /* DocumentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3EA84AC92B57C79A00F46E94 /* pawel-czerwinski-0043ZaxWdPY-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pawel-czerwinski-0043ZaxWdPY-unsplash.jpg"; sourceTree = "<group>"; };
 		3EA84ACB2B57C79F00F46E94 /* neom-gBCMAENwknA-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "neom-gBCMAENwknA-unsplash.jpg"; sourceTree = "<group>"; };
 		3EA84ACD2B57C7A200F46E94 /* neom-4K_x--J2Jbc-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "neom-4K_x--J2Jbc-unsplash.jpg"; sourceTree = "<group>"; };
+		3EA84AD12B57E2D100F46E94 /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				3E25ECA52B56D02300D3DD3A /* ViewController.swift */,
 				3E25ECA72B56D02300D3DD3A /* Main.storyboard */,
 				3EA84ABD2B57B60B00F46E94 /* DocumentTableViewController.swift */,
+				3EA84AD12B57E2D100F46E94 /* DocumentViewController.swift */,
 				3E25ECAA2B56D02400D3DD3A /* Assets.xcassets */,
 				3E25ECAC2B56D02400D3DD3A /* LaunchScreen.storyboard */,
 				3E25ECAF2B56D02400D3DD3A /* Info.plist */,
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EA84AD22B57E2D100F46E94 /* DocumentViewController.swift in Sources */,
 				3E25ECA62B56D02300D3DD3A /* ViewController.swift in Sources */,
 				3E25ECA22B56D02300D3DD3A /* AppDelegate.swift in Sources */,
 				3EA84ABE2B57B60B00F46E94 /* DocumentTableViewController.swift in Sources */,
@@ -310,10 +314,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Document App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = DocumentApp;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -326,6 +333,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pichon-avinash.Document-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -337,10 +345,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Document App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = DocumentApp;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -353,6 +364,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pichon-avinash.Document-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

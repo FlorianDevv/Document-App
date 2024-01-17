@@ -16,6 +16,8 @@ extension Int {
 }
 class DocumentTableViewController: UITableViewController {
 
+    var documents: [DocumentFile] = []
+    
     struct DocumentFile {
         var title: String
         var size: Int
@@ -24,7 +26,7 @@ class DocumentTableViewController: UITableViewController {
         var type: String
     }
     
-    static let document: [DocumentFile] = [
+  /*  static let document: [DocumentFile] = [
         DocumentFile(title: "Document 1", size: 100, imageName: nil, url: URL(string: "https://www.apple.com")!, type: "text/plain"),
         DocumentFile(title: "Document 2", size: 200, imageName: nil, url: URL(string: "https://www.apple.com")!, type: "text/plain"),
             DocumentFile(title: "Document 3", size: 300, imageName: nil, url: URL(string: "https://www.apple.com")!, type: "text/plain"),
@@ -36,18 +38,40 @@ class DocumentTableViewController: UITableViewController {
             DocumentFile(title: "Document 9", size: 900, imageName: nil, url: URL(string: "https://www.apple.com")!, type: "text/plain"),
             DocumentFile(title: "Document 10", size: 1000, imageName: nil, url: URL(string: "https://www.apple.com")!, type: "text/plain"),
 
-    ]
+    ] */
+    
+    
+    // A mettre dans votre DocumentTableViewController
+    func listFileInBundle() -> [DocumentFile] {
+            let fm = FileManager.default
+            let path = Bundle.main.resourcePath!
+            let items = try! fm.contentsOfDirectory(atPath: path)
+            
+            var documentListBundle = [DocumentFile]()
+        
+            for item in items {
+                if !item.hasSuffix("DS_Store") && item.hasSuffix(".jpg") {
+                    let currentUrl = URL(fileURLWithPath: path + "/" + item)
+                    let resourcesValues = try! currentUrl.resourceValues(forKeys: [.contentTypeKey, .nameKey, .fileSizeKey])
+                       
+                    documentListBundle.append(DocumentFile(
+                        title: resourcesValues.name!,
+                        size: resourcesValues.fileSize ?? 0,
+                        imageName: item,
+                        url: currentUrl,
+                        type: resourcesValues.contentType!.description)
+                    )
+                }
+            }
+            return documentListBundle
+        }
     
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        print(DocumentTableViewController.document)
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
+            super.viewDidLoad()
+            documents = listFileInBundle()
+            tableView.reloadData()
+        }
 
     // MARK: - Table view data source
 
@@ -55,19 +79,23 @@ class DocumentTableViewController: UITableViewController {
     return 1
 }
 
-override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return DocumentTableViewController.document.count
-}
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return documents.count
+        }
 
-override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "DocumentCell", for: indexPath)
-    let document = DocumentTableViewController.document[indexPath.row]
-    cell.textLabel?.text = document.title
-    cell.detailTextLabel?.text = "\(document.size.formattedSize())"
-    
-    return cell
-}
-    
+        override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "DocumentCell", for: indexPath)
+            let document = documents[indexPath.row]
+            cell.textLabel?.text = document.title
+            cell.detailTextLabel?.text = "\(document.size.formattedSize())"
+            
+            return cell
+        }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowDocumentSegue", let destination = segue.destination as? DocumentViewController, let index = tableView.indexPathForSelectedRow?.row {
+            destination.imageName = documents[index].imageName
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.
