@@ -13,6 +13,11 @@
 		3E25ECA92B56D02300D3DD3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E25ECA72B56D02300D3DD3A /* Main.storyboard */; };
 		3E25ECAB2B56D02400D3DD3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E25ECAA2B56D02400D3DD3A /* Assets.xcassets */; };
 		3E25ECAE2B56D02400D3DD3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E25ECAC2B56D02400D3DD3A /* LaunchScreen.storyboard */; };
+		3EA84ABE2B57B60B00F46E94 /* DocumentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA84ABD2B57B60B00F46E94 /* DocumentTableViewController.swift */; };
+		3EA84AC82B57C78B00F46E94 /* lena-polishko-A7OQGrksdPM-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EA84AC72B57C78B00F46E94 /* lena-polishko-A7OQGrksdPM-unsplash.jpg */; };
+		3EA84ACA2B57C79A00F46E94 /* pawel-czerwinski-0043ZaxWdPY-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EA84AC92B57C79A00F46E94 /* pawel-czerwinski-0043ZaxWdPY-unsplash.jpg */; };
+		3EA84ACC2B57C79F00F46E94 /* neom-gBCMAENwknA-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EA84ACB2B57C79F00F46E94 /* neom-gBCMAENwknA-unsplash.jpg */; };
+		3EA84ACE2B57C7A300F46E94 /* neom-4K_x--J2Jbc-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EA84ACD2B57C7A200F46E94 /* neom-4K_x--J2Jbc-unsplash.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		3E25ECAA2B56D02400D3DD3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E25ECAD2B56D02400D3DD3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E25ECAF2B56D02400D3DD3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EA84ABD2B57B60B00F46E94 /* DocumentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTableViewController.swift; sourceTree = "<group>"; };
+		3EA84AC72B57C78B00F46E94 /* lena-polishko-A7OQGrksdPM-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lena-polishko-A7OQGrksdPM-unsplash.jpg"; sourceTree = "<group>"; };
+		3EA84AC92B57C79A00F46E94 /* pawel-czerwinski-0043ZaxWdPY-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pawel-czerwinski-0043ZaxWdPY-unsplash.jpg"; sourceTree = "<group>"; };
+		3EA84ACB2B57C79F00F46E94 /* neom-gBCMAENwknA-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "neom-gBCMAENwknA-unsplash.jpg"; sourceTree = "<group>"; };
+		3EA84ACD2B57C7A200F46E94 /* neom-4K_x--J2Jbc-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "neom-4K_x--J2Jbc-unsplash.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +70,14 @@
 				3E25ECA32B56D02300D3DD3A /* SceneDelegate.swift */,
 				3E25ECA52B56D02300D3DD3A /* ViewController.swift */,
 				3E25ECA72B56D02300D3DD3A /* Main.storyboard */,
+				3EA84ABD2B57B60B00F46E94 /* DocumentTableViewController.swift */,
 				3E25ECAA2B56D02400D3DD3A /* Assets.xcassets */,
 				3E25ECAC2B56D02400D3DD3A /* LaunchScreen.storyboard */,
 				3E25ECAF2B56D02400D3DD3A /* Info.plist */,
+				3EA84AC92B57C79A00F46E94 /* pawel-czerwinski-0043ZaxWdPY-unsplash.jpg */,
+				3EA84ACD2B57C7A200F46E94 /* neom-4K_x--J2Jbc-unsplash.jpg */,
+				3EA84ACB2B57C79F00F46E94 /* neom-gBCMAENwknA-unsplash.jpg */,
+				3EA84AC72B57C78B00F46E94 /* lena-polishko-A7OQGrksdPM-unsplash.jpg */,
 			);
 			path = "Document App";
 			sourceTree = "<group>";
@@ -125,9 +140,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EA84ACA2B57C79A00F46E94 /* pawel-czerwinski-0043ZaxWdPY-unsplash.jpg in Resources */,
+				3EA84ACE2B57C7A300F46E94 /* neom-4K_x--J2Jbc-unsplash.jpg in Resources */,
+				3EA84ACC2B57C79F00F46E94 /* neom-gBCMAENwknA-unsplash.jpg in Resources */,
 				3E25ECAE2B56D02400D3DD3A /* LaunchScreen.storyboard in Resources */,
 				3E25ECAB2B56D02400D3DD3A /* Assets.xcassets in Resources */,
 				3E25ECA92B56D02300D3DD3A /* Main.storyboard in Resources */,
+				3EA84AC82B57C78B00F46E94 /* lena-polishko-A7OQGrksdPM-unsplash.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +159,7 @@
 			files = (
 				3E25ECA62B56D02300D3DD3A /* ViewController.swift in Sources */,
 				3E25ECA22B56D02300D3DD3A /* AppDelegate.swift in Sources */,
+				3EA84ABE2B57B60B00F46E94 /* DocumentTableViewController.swift in Sources */,
 				3E25ECA42B56D02300D3DD3A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
