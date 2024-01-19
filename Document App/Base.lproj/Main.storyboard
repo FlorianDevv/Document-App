@@ -74,7 +74,7 @@
         <!--Preview Controller-->
         <scene sceneID="ek0-0I-sV0">
             <objects>
-                <viewController id="Piz-ok-6cc" customClass="QLPreviewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PreviewController" id="Piz-ok-6cc" customClass="QLPreviewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SaU-gk-VzF">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
