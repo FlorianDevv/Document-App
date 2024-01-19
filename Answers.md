@@ -67,6 +67,10 @@ let buton2 =  UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #
 navigationItem.rightBarButtonItem = [buton1,buton2]
 
 ```
+## 5. A quoi sert la fonction defer ?
+C'est un opérateur qui permet d'exécuter du code à la fin de l'execution de l'application.
+
+
 
 
 
