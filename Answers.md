@@ -1,6 +1,6 @@
 # Environnement de développement
 
-## 1. Pour chaque élément de la liste ci-dessus, vous rédigez un paragraphe expliquant à quoi il sert.
+#### 1. Pour chaque élément de la liste ci-dessus, vous rédigez un paragraphe expliquant à quoi il sert.
    
 - Les targets : Il s'agit d'un emsemble d'insruction de compilation pour génerer une application 
 
@@ -12,54 +12,54 @@
 
 - Expliquer ce qu’est un simulateur : Il permet de visualiser l'application lancée à l'aide d'un emulateur IOS.
 
-## 2. A quoi sert le raccourci Cmd + R ?
+#### 2. A quoi sert le raccourci Cmd + R ?
 Il sert à compilier/lancer l'application
 
-## 3. A quoi sert le raccourci Cmd + Shift + O ?
+#### 3. A quoi sert le raccourci Cmd + Shift + O ?
 Il permet d'ouvrir une fenetre avec différentes aides.
 
-## 4. Trouver le raccourci pour indenter le code automatiquement
+#### 4. Trouver le raccourci pour indenter le code automatiquement
 CMD + i 
 
-## 5. Et celui pour commenter la selection
+#### 5. Et celui pour commenter la selection
 CMD + /
 
 # Délégation
 
-## 1.Expliquer l’intérêt d’une propriété statique en programmation.
+#### 1.Expliquer l’intérêt d’une propriété statique en programmation.
 Les propriétés statiques peuvent être utlisées n'importe où dans le code.
 
-## 2. Expliquer pourquoi dequeueReusableCell est important pour les performances de l’application.
+#### 2. Expliquer pourquoi dequeueReusableCell est important pour les performances de l’application.
 dequeueReusableCell sert à réutliser une cellule déja créer pour éviter d'en créer une nouvelle à chaque fois. Cela améliore la performance de l'application car elle évite de créer de nouvelle instance à chaque cellule.
 
 # Ajout de la navigation
 
-## 1. Quel est le rôle du NavigationController ?
+#### 1. Quel est le rôle du NavigationController ?
 Il permet de naviguer entre les différentes pages de l'application.
 
-## 2. Est-ce que la NavigationBar est la même chose que le NavigationController ?
+#### 2. Est-ce que la NavigationBar est la même chose que le NavigationController ?
 Nan, la naviguation bar est intégré dans l'application et peut être personnaliser.
 
 # Créer l’écran de détail
 
-## 1. Expliquer ce qu’est un Segue et à quoi il sert
+#### 1. Expliquer ce qu’est un Segue et à quoi il sert
 Les segues sont des connecteurs visuels entre les contrôleurs de vue dans vos storyboards, représentés par des lignes entre les deux contrôleurs. Il sert à gérer les transitions entre les différentes partie de l'interface utlisateur.
 
-## 2. Qu’est-ce qu’une constraint ? A quoi sert-elle ? Quel est le lien avec AutoLayout ?
+#### 2. Qu’est-ce qu’une constraint ? A quoi sert-elle ? Quel est le lien avec AutoLayout ?
 Les contraintes servent à gérer le positionnement des images pour pas qu'il ne deppasse de l'ecran par exemple. Il s'accorde avec autoLayout.
 
 #  Exercice 2 - Importer un fichier au runtime
 
-## 1. Expliquez ce qu’est un #selector en Swift
+#### 1. Expliquez ce qu’est un #selector en Swift
 Un #selector est une chaîne de caractères qui représente la signature d'une méthode générique dans une classe.
 
-## 2. Que représente .add dans notre appel ?
+#### 2. Que représente .add dans notre appel ?
 Il permet d'ajouter le bouton à la bar de naviguation.
 
-## 3. Expliquez également pourquoi XCode vous demande de mettre le mot clé @objc devant la fonction ciblée par le #selector.
+#### 3. Expliquez également pourquoi XCode vous demande de mettre le mot clé @objc devant la fonction ciblée par le #selector.
 @objc permet de faciliter l'interaction entre Swift et Objective-C
 
-## 4. Peut-on ajouter plusieurs boutons dans la barre de navigation ? Si oui, comment en code ?
+#### 4. Peut-on ajouter plusieurs boutons dans la barre de navigation ? Si oui, comment en code ?
 Oui on peut comme ceci :
 ```
 let buton1 =  UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addDocument))
@@ -67,7 +67,7 @@ let buton2 =  UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #
 navigationItem.rightBarButtonItem = [buton1,buton2]
 
 ```
-## 5. A quoi sert la fonction defer ?
+#### 5. A quoi sert la fonction defer ?
 C'est un opérateur qui permet d'exécuter du code à la fin de l'execution de l'application.
 
 
